@@ -19,6 +19,7 @@
 body {
     height: 100vh;
     background-color: var(--zm-black);
+    font-family: Helvetica, sans-serif;
 }
 
 header, footer {
@@ -156,6 +157,7 @@ button {
 .user {
     z-index: 1;
     bottom: 0.25rem;
+    font-size: 0.9rem;
     color: var(--zm-white);
     background-color: var(--zm-user);
 }
@@ -168,16 +170,18 @@ button {
 /* #region footer */
 
 footer button {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
-
+footer .align {
+    font-size: 0.75rem;
+}
 .left_footer {
     padding-left: 1rem;
 }
 
 .left_footer .triangle {
     font-size: 1.5rem;
-    margin-left: -0.5rem;
+    margin-left: -0.25rem;
     margin-right: 1rem;
 }
 
@@ -213,21 +217,5 @@ footer button {
 
 
 /* #region debug */
-
-.debug .centered {
-    border: 2px dashed;
-}
-
-.debug .col {
-    background-color: red;
-}
-
-
-
-.debug .left_footer, .debug .central_footer, .debug .right_footer {
-    height: 100%;
-    background-color: red;
-    border: 1px dashed;
-}
 
 /* #endregion debug */
