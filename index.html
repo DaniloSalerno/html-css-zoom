@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="debu">
+<body class="">
     <header class="site_header">
 
         <div class="view_button">
@@ -26,7 +26,7 @@
 
     <main>
         <div class="main_container centered">
-            <div class="row d_flex f_wrap gap_1">
+            <div class="row d_flex f_wrap">
 
                 <div class="col">
                     <div class="card relative">
@@ -433,8 +433,98 @@
     </main>
     <!-- /main -->
 
-    <footer class="footer_site">
+    <footer class="footer_site d_flex">
+        <div class="left_footer col_2 d_flex gap_1 item_center">
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+                <div>Mute</div>
+            </div>
 
+            <span class="triangle">&circ;</span>
+
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-video"></i>
+                </button>
+                <div>Stop video</div>
+            </div>
+
+            <span class="triangle">&circ;</span>
+
+        </div>
+        <!-- /.left_footer -->
+        <div class="central_footer col_8 d_flex gap_2 item_center justify_center">
+            <div class="align">
+
+                <button>
+                    <i class="fa-solid fa-user-plus"></i>
+                </button>
+                <div>Invite</div>
+            </div>
+
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-user-group"></i>
+                </button>
+                <div>Manage Partecipants</div>
+            </div>
+            
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-chart-column"></i>
+                </button>
+                <div>Polling</div>
+            </div>
+            
+            <div class="align">
+                <button class="share">
+                    <i class="fa-solid fa-share-from-square"></i>
+                </button>
+                <div>Share Screen</div>
+            </div>
+            
+            <span class="triangle">&circ;</span>
+
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-comment"></i>
+                </button>
+                <div>Chat</div>
+            </div>
+            
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-bullseye"></i>
+                </button>
+                <div>Record</div>
+            </div>
+            
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </button>
+                <div>Brekout Rooms</div>
+            </div>
+            
+            <div class="align">
+                <button>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+                <div>More</div>
+            </div>
+            
+        </div>
+        <!-- /.central_footer -->
+        <div class="right_footer col_2">
+            <span class="d_flex justify_center justify_end">
+                <button>
+                    End meeting
+                </button>
+            </span>
+        </div>
+        <!-- /.right_footer -->
     </footer>
     <!-- /.footer_site -->
 </body>

@@ -63,12 +63,38 @@ button {
 .f_wrap {
     flex-wrap: wrap;
 }
+.d_flex_col {
+    display: flex;
+    flex-direction: column;
+}
 
+.justify_center {
+    justify-content: center;
+}
+
+.justify_end {
+    justify-content: flex-end;
+}
+
+.item_center {
+    align-items: center;
+}
+
+.gap_1 {
+    gap: 0.5rem;
+}
+.gap_2 {
+    gap: 1rem;
+}
 
 .centered {
     width: 85%;
     max-width: 1370px;
     margin: auto;
+}
+
+.align {
+    text-align: center;
 }
 
 .relative {
@@ -77,6 +103,15 @@ button {
 .absolute {
     position: absolute;
 }
+
+.col_2 {
+    width: calc(100% / 12 * 2);
+}
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+
 /* #endregion utilities */
 
 
@@ -117,12 +152,55 @@ button {
     width: 100%;
 }
 
+
+.user {
+    z-index: 1;
+    bottom: 0.25rem;
+    color: var(--zm-white);
+    background-color: var(--zm-user);
+}
+
+
 /* #endregion main */
 
 
 
 /* #region footer */
 
+footer button {
+    font-size: 1.5rem;
+}
+
+.left_footer {
+    padding-left: 1rem;
+}
+
+.left_footer .triangle {
+    font-size: 1.5rem;
+    margin-left: -0.5rem;
+    margin-right: 1rem;
+}
+
+.central_footer .triangle {
+    font-size: 1.5rem;
+    margin-left: -1rem;
+    margin-right: 0.5rem;
+}
+
+.central_footer .share {
+    color: var(--zm-share);
+}
+
+.right_footer > span {
+    height: 100%;
+}
+
+.right_footer > span > button {
+    background-color: var(--zm-btn);
+    color: var(--zm-end);
+    font-size: 1rem;
+    padding: 0 1.5rem;
+}
 /* #endregion footer */
 
 
@@ -144,11 +222,12 @@ button {
     background-color: red;
 }
 
-.user {
-    z-index: 1;
-    bottom: 0.25rem;
-    color: var(--zm-white);
-    background-color: var(--zm-user);
+
+
+.debug .left_footer, .debug .central_footer, .debug .right_footer {
+    height: 100%;
+    background-color: red;
+    border: 1px dashed;
 }
 
 /* #endregion debug */
