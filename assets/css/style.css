@@ -172,7 +172,7 @@ button {
 footer button {
     font-size: 1.25rem;
 }
-footer .align {
+footer button > div {
     font-size: 0.75rem;
 }
 .left_footer {
