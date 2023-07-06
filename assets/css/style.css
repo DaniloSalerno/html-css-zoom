@@ -8,18 +8,20 @@
 
 :root {
     --zm-black: rgb(0, 0, 0);
+    --zm-dark: rgb(34, 34, 34);
     --zm-white: rgb(255, 255, 255);
     --zm-share: rgb(75, 200, 0);
     --zm-btn: rgb(74, 74, 74);
+    --zm-user: rgba(74, 74, 74, 0.75);
     --zm-end: rgb(248, 12, 18);
 }
 
 body {
     height: 100vh;
+    background-color: var(--zm-black);
 }
 
 header, footer {
-    background-color: var(--zm-black);
     position: sticky;
     height: 70px;
     width: 100%;
@@ -30,10 +32,12 @@ header, footer {
 
 header {
     top: 0;
+    background-color: var(--zm-black);
 }
 
 footer {
     bottom: 0;   
+    background-color: var(--zm-dark);
 }
 
 main {
@@ -62,9 +66,16 @@ button {
 
 
 .centered {
-    width: 80%;
-    max-width: 1170px;
+    width: 85%;
+    max-width: 1370px;
     margin: auto;
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
 }
 /* #endregion utilities */
 
@@ -102,6 +113,9 @@ button {
     padding: 0.5rem;
 }
 
+.card img {
+    width: 100%;
+}
 
 /* #endregion main */
 
@@ -127,13 +141,14 @@ button {
 }
 
 .debug .col {
-    height: 150px;
     background-color: red;
 }
 
-.debug .card {
-    background-color: yellow;
-    height: 100%;
-    width: 100%;
+.user {
+    z-index: 1;
+    bottom: 0.25rem;
+    color: var(--zm-white);
+    background-color: var(--zm-user);
 }
+
 /* #endregion debug */
