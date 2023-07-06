@@ -1,5 +1,102 @@
+/* #region common */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --zm-black: rgb(0, 0, 0);
+    --zm-white: rgb(255, 255, 255);
+    --zm-share: rgb(75, 200, 0);
+    --zm-btn: rgb(74, 74, 74);
+    --zm-end: rgb(248, 12, 18);
+}
+
+
+header, footer {
+    background-color: var(--zm-black);
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    left: 0;
+    color: var(--zm-white);
+}
+
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;   
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+/* #endregion common */
+
+
+
+/* #region utilities */
+
+.d_flex {
+    display: flex;
+}
+/* #endregion utilities */
+
+
+
+/* #region header */
+
+/* #endregion header */
+
+
+
+/* #region main */
+
+/* #endregion main */
+
+
+
+/* #region footer */
+
+/* #endregion footer */
+
+
+
+
+
+
+
+
+
+
+/* #region debug */
+body.debug {
+    height: 100vh;
+}
+
+.debug .view_button {
+    top: 0.5rem;
+    right: 0.5rem;
+    position: fixed;
+}
+
+.view_button > button {
+    margin-left: 1rem;
+    padding: 0.4rem;
+    background-color: var(--zm-btn);
+    border-radius: 6px;
+}
+
+
+
+
+/* #endregion debug */
